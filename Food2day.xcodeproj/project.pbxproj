@@ -12,9 +12,13 @@
 		5C60AACE20CD6003004998D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C60AACC20CD6003004998D8 /* Main.storyboard */; };
 		5C60AAD020CD6004004998D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C60AACF20CD6004004998D8 /* Assets.xcassets */; };
 		5C60AAD320CD6004004998D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C60AAD120CD6004004998D8 /* LaunchScreen.storyboard */; };
+		5C60AADB20CD61DF004998D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C60AADA20CD61DF004998D8 /* GoogleService-Info.plist */; };
+		DAC990E4849742EF76534F69 /* Pods_Food2day.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CEAAC6A1DC10B3C64DEDFF /* Pods_Food2day.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1567417C5B3E4C98CCCB838F /* Pods-Food2day.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food2day.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Food2day/Pods-Food2day.debug.xcconfig"; sourceTree = "<group>"; };
+		54E9AAA7134D05564D2518B9 /* Pods-Food2day.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food2day.release.xcconfig"; path = "Pods/Target Support Files/Pods-Food2day/Pods-Food2day.release.xcconfig"; sourceTree = "<group>"; };
 		5C60AAC520CD6003004998D8 /* Food2day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Food2day.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C60AAC820CD6003004998D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C60AACA20CD6003004998D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		5C60AACF20CD6004004998D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C60AAD220CD6004004998D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C60AAD420CD6004004998D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C60AADA20CD61DF004998D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B2CEAAC6A1DC10B3C64DEDFF /* Pods_Food2day.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Food2day.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC990E4849742EF76534F69 /* Pods_Food2day.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43F5D6FD69E778A188D08C4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1567417C5B3E4C98CCCB838F /* Pods-Food2day.debug.xcconfig */,
+				54E9AAA7134D05564D2518B9 /* Pods-Food2day.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5C60AABC20CD6003004998D8 = {
 			isa = PBXGroup;
 			children = (
 				5C60AAC720CD6003004998D8 /* Food2day */,
 				5C60AAC620CD6003004998D8 /* Products */,
+				43F5D6FD69E778A188D08C4C /* Pods */,
+				6CE873D495704E58FE2A14CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +78,17 @@
 				5C60AACF20CD6004004998D8 /* Assets.xcassets */,
 				5C60AAD120CD6004004998D8 /* LaunchScreen.storyboard */,
 				5C60AAD420CD6004004998D8 /* Info.plist */,
+				5C60AADA20CD61DF004998D8 /* GoogleService-Info.plist */,
 			);
 			path = Food2day;
+			sourceTree = "<group>";
+		};
+		6CE873D495704E58FE2A14CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2CEAAC6A1DC10B3C64DEDFF /* Pods_Food2day.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C60AAD720CD6004004998D8 /* Build configuration list for PBXNativeTarget "Food2day" */;
 			buildPhases = (
+				870EB3233B64E99D6C5F8260 /* [CP] Check Pods Manifest.lock */,
 				5C60AAC120CD6003004998D8 /* Sources */,
 				5C60AAC220CD6003004998D8 /* Frameworks */,
 				5C60AAC320CD6003004998D8 /* Resources */,
+				D6885AB0E095E02C825D1775 /* [CP] Embed Pods Frameworks */,
+				24A77A23882EA73858F0C5C1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,10 +155,72 @@
 				5C60AAD320CD6004004998D8 /* LaunchScreen.storyboard in Resources */,
 				5C60AAD020CD6004004998D8 /* Assets.xcassets in Resources */,
 				5C60AACE20CD6003004998D8 /* Main.storyboard in Resources */,
+				5C60AADB20CD61DF004998D8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24A77A23882EA73858F0C5C1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Food2day/Pods-Food2day-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Food2day/Pods-Food2day-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		870EB3233B64E99D6C5F8260 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Food2day-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6885AB0E095E02C825D1775 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Food2day/Pods-Food2day-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Food2day/Pods-Food2day-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5C60AAC120CD6003004998D8 /* Sources */ = {
@@ -278,6 +370,7 @@
 		};
 		5C60AAD820CD6004004998D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1567417C5B3E4C98CCCB838F /* Pods-Food2day.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +389,7 @@
 		};
 		5C60AAD920CD6004004998D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54E9AAA7134D05564D2518B9 /* Pods-Food2day.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
