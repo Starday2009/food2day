@@ -13,6 +13,8 @@
 		5C60AAD020CD6004004998D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C60AACF20CD6004004998D8 /* Assets.xcassets */; };
 		5C60AAD320CD6004004998D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C60AAD120CD6004004998D8 /* LaunchScreen.storyboard */; };
 		5C60AADB20CD61DF004998D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C60AADA20CD61DF004998D8 /* GoogleService-Info.plist */; };
+		5C6548F720CD77A900B8153D /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6548F620CD77A900B8153D /* SheetViewController.swift */; };
+		5C71B9E420CD742200C100E2 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C71B9E320CD742200C100E2 /* credentials.plist */; };
 		DAC990E4849742EF76534F69 /* Pods_Food2day.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CEAAC6A1DC10B3C64DEDFF /* Pods_Food2day.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		5C60AAD220CD6004004998D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C60AAD420CD6004004998D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C60AADA20CD61DF004998D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5C6548F620CD77A900B8153D /* SheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewController.swift; sourceTree = "<group>"; };
+		5C71B9E320CD742200C100E2 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = credentials.plist; path = ../credentials.plist; sourceTree = "<group>"; };
 		B2CEAAC6A1DC10B3C64DEDFF /* Pods_Food2day.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Food2day.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -55,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				5C60AAC720CD6003004998D8 /* Food2day */,
+				5C71B9E320CD742200C100E2 /* credentials.plist */,
 				5C60AAC620CD6003004998D8 /* Products */,
 				43F5D6FD69E778A188D08C4C /* Pods */,
 				6CE873D495704E58FE2A14CE /* Frameworks */,
@@ -74,6 +79,7 @@
 			children = (
 				5C60AAC820CD6003004998D8 /* AppDelegate.swift */,
 				5C60AACA20CD6003004998D8 /* ViewController.swift */,
+				5C6548F620CD77A900B8153D /* SheetViewController.swift */,
 				5C60AACC20CD6003004998D8 /* Main.storyboard */,
 				5C60AACF20CD6004004998D8 /* Assets.xcassets */,
 				5C60AAD120CD6004004998D8 /* LaunchScreen.storyboard */,
@@ -154,6 +160,7 @@
 			files = (
 				5C60AAD320CD6004004998D8 /* LaunchScreen.storyboard in Resources */,
 				5C60AAD020CD6004004998D8 /* Assets.xcassets in Resources */,
+				5C71B9E420CD742200C100E2 /* credentials.plist in Resources */,
 				5C60AACE20CD6003004998D8 /* Main.storyboard in Resources */,
 				5C60AADB20CD61DF004998D8 /* GoogleService-Info.plist in Resources */,
 			);
@@ -207,12 +214,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Food2day/Pods-Food2day-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C6548F720CD77A900B8153D /* SheetViewController.swift in Sources */,
 				5C60AACB20CD6003004998D8 /* ViewController.swift in Sources */,
 				5C60AAC920CD6003004998D8 /* AppDelegate.swift in Sources */,
 			);
