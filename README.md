@@ -1,14 +1,13 @@
 
-> Development Setup
+## Development Setup
 
 
 Please open food2day.xcworkspace instead of food2day.xcodeproj.
 
 This project uses cocoapods, don't forget to install them.
 
-Steps
->Install Xcode
-
+## Steps
+Install Xcode
 Install cocoapods via $ sudo gem install cocoapods
 verify with pod --version currently at 1.5.2
 Update cocoapods repo via pod repo update,
