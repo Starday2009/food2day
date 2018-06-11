@@ -12,9 +12,9 @@
 		5C60AACE20CD6003004998D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C60AACC20CD6003004998D8 /* Main.storyboard */; };
 		5C60AAD020CD6004004998D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C60AACF20CD6004004998D8 /* Assets.xcassets */; };
 		5C60AAD320CD6004004998D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C60AAD120CD6004004998D8 /* LaunchScreen.storyboard */; };
-		5C60AADB20CD61DF004998D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C60AADA20CD61DF004998D8 /* GoogleService-Info.plist */; };
 		5C6548F720CD77A900B8153D /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6548F620CD77A900B8153D /* SheetViewController.swift */; };
 		5C71B9E420CD742200C100E2 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C71B9E320CD742200C100E2 /* credentials.plist */; };
+		5CFC95D820CF173500E7063B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5CFC95D720CF173500E7063B /* GoogleService-Info.plist */; };
 		DAC990E4849742EF76534F69 /* Pods_Food2day.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CEAAC6A1DC10B3C64DEDFF /* Pods_Food2day.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,9 +28,9 @@
 		5C60AACF20CD6004004998D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C60AAD220CD6004004998D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C60AAD420CD6004004998D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C60AADA20CD61DF004998D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5C6548F620CD77A900B8153D /* SheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewController.swift; sourceTree = "<group>"; };
 		5C71B9E320CD742200C100E2 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = credentials.plist; path = ../credentials.plist; sourceTree = "<group>"; };
+		5CFC95D720CF173500E7063B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		B2CEAAC6A1DC10B3C64DEDFF /* Pods_Food2day.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Food2day.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -84,7 +84,7 @@
 				5C60AACF20CD6004004998D8 /* Assets.xcassets */,
 				5C60AAD120CD6004004998D8 /* LaunchScreen.storyboard */,
 				5C60AAD420CD6004004998D8 /* Info.plist */,
-				5C60AADA20CD61DF004998D8 /* GoogleService-Info.plist */,
+				5CFC95D720CF173500E7063B /* GoogleService-Info.plist */,
 			);
 			path = Food2day;
 			sourceTree = "<group>";
@@ -162,7 +162,7 @@
 				5C60AAD020CD6004004998D8 /* Assets.xcassets in Resources */,
 				5C71B9E420CD742200C100E2 /* credentials.plist in Resources */,
 				5C60AACE20CD6003004998D8 /* Main.storyboard in Resources */,
-				5C60AADB20CD61DF004998D8 /* GoogleService-Info.plist in Resources */,
+				5CFC95D820CF173500E7063B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

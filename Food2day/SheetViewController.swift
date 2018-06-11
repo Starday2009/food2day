@@ -63,8 +63,8 @@ class SheetViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDeleg
     func listMajors() {
         output.text = "Getting sheet data..."
         let spreadsheetId = "1T_pl77kO1hlM6_T7G-nXKvk5jRSxqVoAJVLdX0by61U"
-        let range = "A1:B"
-//        let range = "Class Data!A2:E"
+        let range = "A1:M34"
+//        =QUERY(A1:M34, "SELECT B, D,E,F,G,H,I,J,K,L,M where A = 'Боб Макаду'")
         let query = GTLRSheetsQuery_SpreadsheetsValuesGet
             .query(withSpreadsheetId: spreadsheetId, range:range)
         service.executeQuery(query,
@@ -91,12 +91,20 @@ class SheetViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDeleg
             return
         }
         
-        majorsString += "Name, Major:\n"
+        majorsString += "Name, Food:\n"
         for row in rows {
+            print(row)
             let name = row[0]
-            let major = row[0]
+            let food = row[1]
+            let food1 = row[2]
+            let food2 = row[3]
+            let food3 = row[4]
+            let food4 = row[5]
+            let food5 = row[6]
+            let food6 = row[7]
             
-            majorsString += "\(name), \(major)\n"
+            
+            majorsString += "\(name), \(food), \(food1), \(food2), \(food3).\(food4), \(food5), \(food6)\n"
         }
         
         output.text = majorsString
